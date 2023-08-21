@@ -1,0 +1,16 @@
+.faq__item__radio:checked {
+	& ~ .faq__item__text {
+		height: auto;
+		margin-top: 0.81rem;
+		transform: scaleY(1);
+	}
+	& ~ .faq__item__cta {
+		& > .faq__item__title {
+			color: #1e1f36;
+			font-weight: 700;
+		}
+		& > .faq__item__arrow {
+			transform: rotate(180deg);
+		}
+	}
+}
