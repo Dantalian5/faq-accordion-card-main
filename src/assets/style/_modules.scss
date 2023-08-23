@@ -30,7 +30,7 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 	position: relative;
 	&__base {
 		display: block;
-		width: 85%;
+		width: 72.5%;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
@@ -38,7 +38,7 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 	}
 	&__shadow {
 		display: block;
-		width: 85%;
+		width: 72.5%;
 		position: absolute;
 		//bottom: 40%;
 		bottom: 0;
@@ -84,5 +84,30 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 		width: 100%;
 		border-top: 1px solid #e8e8ea;
 		margin-block: 1rem;
+	}
+}
+
+@media (min-width: calc(31.25rem + 1.5rem * 2)) {
+	.img {
+		&__base {
+			width: 100%;
+			bottom: auto;
+			top: 50%;
+			left: 0;
+			transform: translate(-18%, -50%);
+		}
+		&__shadow {
+			width: 100%;
+			bottom: auto;
+			top: 70%;
+			left: 0;
+			transform: translate(-18%, 0%);
+		}
+	}
+	.faq {
+		padding-block: 4rem 5rem;
+		&__title {
+			margin-inline: 0;
+		}
 	}
 }
