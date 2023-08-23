@@ -28,22 +28,34 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 }
 .img {
 	position: relative;
-	&__base {
-		display: block;
-		width: 72.5%;
+	&__base--wrapper {
 		position: absolute;
+		width: 72.5%;
 		bottom: 0;
 		left: 50%;
 		transform: translate(-50%, -17%);
+		z-index: 20;
 	}
-	&__shadow {
+	&__base {
 		display: block;
-		width: 72.5%;
+		max-width: 100%;
+		width: 100%;
+	}
+	&__shadow--wrapper {
 		position: absolute;
-		//bottom: 40%;
+		width: 72.5%;
 		bottom: 0;
 		left: 50%;
 		transform: translate(-50%, 0%);
+		z-index: 10;
+	}
+	&__shadow {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+	&__box {
+		display: none;
 	}
 }
 
@@ -87,27 +99,59 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 	}
 }
 
-@media (min-width: calc(31.25rem + 1.5rem * 2)) {
+@media (min-width: calc(31.25rem + 12vw)) {
+	.faq-title {
+		font-size: 0.875rem;
+	}
 	.img {
+		&__base--wrapper {
+			width: 100%;
+			bottom: auto;
+			top: 50%;
+			left: 0%;
+			transform: translate(0%, -50%);
+			overflow: hidden;
+		}
 		&__base {
+			transform: translate(-17.5%, 0%);
+		}
+		&__shadow--wrapper {
 			width: 100%;
 			bottom: auto;
 			top: 50%;
 			left: 0;
-			transform: translate(-18%, -50%);
+			transform: translate(0%, -50%);
+			height: 100%;
+			max-height: 100%;
+			overflow: hidden;
 		}
 		&__shadow {
-			width: 100%;
-			bottom: auto;
-			top: 70%;
-			left: 0;
-			transform: translate(-18%, 0%);
+			width: 200%;
+			max-width: none;
+			position: absolute;
+			top: 50%;
+			right: 17.5%;
+			transform: translate(0, -57%);
+		}
+		&__box {
+			width: 40%;
+			display: block;
+			position: absolute;
+			top: 59%;
+			left: -20%;
+			transform: translate(0, -50%);
+			z-index: 30;
 		}
 	}
 	.faq {
 		padding-block: 4rem 5rem;
 		&__title {
 			margin-inline: 0;
+		}
+		&__item {
+			&__cta {
+				padding-right: 1rem;
+			}
 		}
 	}
 }

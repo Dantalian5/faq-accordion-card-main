@@ -24,15 +24,36 @@
 	<body>
 		<main class="container">
 			<div class="container__img img">
+				<div class="img__base--wrapper">
+					<picture>
+						<source
+							media="(min-width: calc(31.25rem + 12vw))"
+							srcset="assets/images/illustration-woman-online-desktop.svg"
+						/>
+						<img
+							class="img__base"
+							src="assets/images/illustration-woman-online-mobile.svg"
+							alt="ilustration of a person buyn"
+						/>
+					</picture>
+				</div>
+				<div class="img__shadow--wrapper">
+					<picture>
+						<source
+							media="(min-width: calc(31.25rem + 12vw))"
+							srcset="assets/images/bg-pattern-desktop.svg"
+						/>
+						<img
+							class="img__shadow"
+							src="assets/images/bg-pattern-mobile.svg"
+							alt="a shadow"
+						/>
+					</picture>
+				</div>
 				<img
-					class="img__base"
-					src="assets/images/illustration-woman-online-mobile.svg"
-					alt="ilustration of a person buyn"
-				/>
-				<img
-					class="img__shadow"
-					src="assets/images/bg-pattern-mobile.svg"
-					alt="a shadow"
+					class="img__box"
+					src="assets/images/illustration-box-desktop.svg"
+					alt="box ilustration"
 				/>
 			</div>
 			<div class="container__faq faq">

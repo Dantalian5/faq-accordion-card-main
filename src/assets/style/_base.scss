@@ -5,6 +5,9 @@
 .attribution a {
 	color: pink;
 }
+:root {
+	--margin-inline: max(1.5rem, 6%);
+}
 body {
 	min-height: 100vh;
 	min-height: 100svh;
@@ -14,6 +17,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding-block: 2.5rem;
+	padding-inline: var(--margin-inline);
 }
 footer {
 	margin-top: 2rem;
