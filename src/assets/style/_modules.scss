@@ -147,11 +147,15 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 		padding-block: 4rem 5rem;
 		&__title {
 			margin-inline: 0;
+			margin-top: 2.81rem;
 		}
 		&__item {
 			&__cta {
 				padding-right: 1rem;
 			}
+		}
+		&__separator {
+			margin-block: 1.13rem;
 		}
 	}
 }
