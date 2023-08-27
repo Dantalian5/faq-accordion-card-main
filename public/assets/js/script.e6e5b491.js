@@ -1,0 +1,1 @@
+const e=document.querySelectorAll(".faq__item__cta");function t(){let t=this.getAttribute("aria-expanded");for(let t=0;t<e.length;t++)e[t].setAttribute("aria-expanded","false");"false"==t&&this.setAttribute("aria-expanded","true")}console.log(e),e.forEach(e=>e.addEventListener("click",t));
