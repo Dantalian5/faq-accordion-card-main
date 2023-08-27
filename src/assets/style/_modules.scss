@@ -1,4 +1,22 @@
 $ff-kumbh: "Kumbh Sans", sans-serif;
+.linkd {
+	border-radius: 1.4375rem;
+	background: #fff;
+	padding: 2rem;
+	margin-inline: 1rem;
+
+	& > ul {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		list-style: disc;
+	}
+	&__item {
+		font-family: $ff-kumbh;
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+}
 
 .heading,
 .faq-title,
@@ -68,6 +86,7 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 	&__item {
 		position: relative;
 		&__cta {
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
