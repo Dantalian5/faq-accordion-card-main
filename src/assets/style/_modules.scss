@@ -86,6 +86,7 @@ $ff-kumbh: "Kumbh Sans", sans-serif;
 	&__item {
 		position: relative;
 		&__cta {
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
