@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Dantalian5/faq-accordion-card-main.git)
-- Live Site URL: [Live site (Vercel)](https://your-live-site-url.com)
+- Live Site URL: [Live site (Vercel)](https://faq-accordion-card-main-taupe-six.vercel.app)
 
 ## My process
 
